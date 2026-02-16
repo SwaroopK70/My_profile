@@ -218,6 +218,27 @@
 
         <section class="mb-12 p-6 bg-gray-900/70 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-800">
             <h2 class="section-header text-2xl font-bold pl-4 mb-6 text-gray-200 uppercase">Key Projects</h2>
+
+
+            <div class="mb-8 border-b border-gray-700 pb-6">
+                <h3 class="text-xl font-bold text-[#60a5fa]">Managing Multi-App Firmware Environment with Custom Bootloader</h3>
+                <a href="https://github.com/SwaroopK70/Custom_Bootloader" target="_blank" class="text-sm text-gray-400 hover:text-[#3b82f6] transition">
+                    <span class="code-pill bg-gray-700 px-2 py-0.5 rounded-full mt-1 inline-block">GitHub Repository &rarr;</span>
+                </a>
+                <p class="mt-3 text-gray-300">
+                    The Custom Bootloader : I engineered a UART-driven bootloader that manages system memory and selects between multiple firmware images. It performs a manual handover by remapping the Main Stack Pointer (MSP) and Reset Vector after a full hardware de-initialization to ensure a clean application start.
+                    
+                    App 1: Temperature Monitoring (LM35) : This application focuses on analog signal processing using an LM35 sensor connected to a 12-bit ADC. To ensure data stability, I implemented an oversampling filter and mathematical conversion to stream real-time Celsius readings to a serial terminal.
+                    
+                    App 2: Object Detection (IR Sensor) : Designed for industrial proximity sensing, this app monitors an LM393-based IR sensor via digital GPIO polling. It demonstrates real-time response logic by detecting beam interruptions and providing instant status updates through the UART interface.
+                </p>
+                <div class="mt-3 text-sm flex flex-wrap gap-3">
+                    <span class="code-pill bg-red-900 text-red-300 px-3 py-1 rounded-full">STM32F407</span>
+                    <span class="code-pill bg-red-900 text-red-300 px-3 py-1 rounded-full">CP2102 UART module</span>
+                    <span class="code-pill bg-red-900 text-red-300 px-3 py-1 rounded-full">LM35 Temperature sensor </span>
+                     <span class="code-pill bg-red-900 text-red-300 px-3 py-1 rounded-full">LM393 IR sensor module</span>
+                </div>
+            </div>
             
             <div class="mb-8 border-b border-gray-700 pb-6">
                 <h3 class="text-xl font-bold text-[#60a5fa]">Vehicles Dashboard using CAN-protocol and IOT</h3>
@@ -283,6 +304,7 @@
 
 </body>
 </html>
+
 
 
 
